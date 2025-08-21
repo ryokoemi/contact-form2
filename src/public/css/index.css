@@ -1,0 +1,129 @@
+/* ブロック: contact */
+.contact {
+    width: 972px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(180, 170, 145, 0.08);
+    padding: 32px;
+}
+
+.contact__title {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #8B7969;
+    font-weight: 400;
+}
+
+.contact__table {
+    width: 100%;
+    border-spacing: 0 20px;
+}
+
+.contact__label {
+    width: 250px;
+    padding-right: 20px;
+    font-size: 18px;
+    background: #BAA899;
+    /* confirmと同じラベル色 */
+    color: #fff;
+    text-align: left;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    border-right: 2px solid #f6f4f1;
+    font-weight: 400;
+}
+
+.contact__required {
+    color: #FF4949;
+}
+
+.contact__field {
+    font-size: 16px;
+    background: #fff;
+    /* confirmやadmin同様「値欄も白」 */
+    color: #8B7969;
+    vertical-align: middle;
+    word-break: break-all;
+    padding: 12px;
+    border-bottom: 1px solid #f6f4f1;
+}
+
+/* 行ボーダー消し（confirmページ同様） */
+.contact__table tr:last-child th,
+.contact__table tr:last-child td {
+    border-bottom: none;
+}
+
+/* 入力欄・セレクト・テキストエリアを統一白 */
+.contact__input,
+.contact__textarea,
+.contact__select {
+    background: #fff;
+    border: none;
+    color: #8B7969;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact__input--short {
+    width: 240px;
+}
+
+.contact__input--spaced {
+    margin-left: 20px;
+}
+
+.contact__input--tel {
+    width: 150px;
+    text-align: center;
+}
+
+.contact__input--full {
+    width: 500px;
+}
+
+.contact__tel-hyphen {
+    margin: 0 6px;
+    color: #8B7969;
+}
+
+.contact__textarea {
+    width: 500px;
+    height: 120px;
+    resize: vertical;
+}
+
+.contact__select {
+    width: 250px;
+}
+
+/* ボタン完全統一 */
+.contact__actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #82756A;
+    color: #fff;
+}
+
+.button--primary {
+    background: #82756A;
+    color: #fff;
+}
+
+.button--primary:hover,
+.button:hover {
+    background: #BAA899;
+    color: #fff;
+}

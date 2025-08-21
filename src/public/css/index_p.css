@@ -1,0 +1,179 @@
+body {
+    background: #FFFFFF;
+    font-family: 'Inika', 'Noto Sans JP', Arial, sans-serif;
+    color: #8B7969;
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダー */
+.header {
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #E0DFDE;
+    font-size: 40px;
+    font-family: 'Inika', serif;
+    color: #8B7969;
+    margin-bottom: 36px;
+}
+
+/* メインタイトル */
+.contact-title {
+    font-size: 35px;
+    font-family: 'Inika', serif;
+    color: #8B7969;
+    margin: 36px auto 38px auto;
+    width: 121px;
+}
+
+/* メインフォーム枠 */
+.form-wrapper {
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    width: 972px;
+    box-shadow: 0 2px 18px rgba(70, 60, 50, 0.07);
+}
+
+.form-group {
+    margin-bottom: 34px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    min-width: 115px;
+    font-size: 20px;
+    font-family: 'Inika', serif;
+    color: #8B7969;
+    margin-right: 38px;
+}
+
+.input-row {
+    display: flex;
+    gap: 12px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    background: #F4F4F4;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-family: 'Inika', 'Noto Sans JP', Arial, sans-serif;
+    padding: 8px 16px;
+    color: #8B7969;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #82756A;
+}
+
+input[type="text"].small {
+    width: 87px;
+}
+
+input[type="text"].mid {
+    width: 178px;
+}
+
+input[type="text"].large,
+input[type="email"],
+select {
+    width: 340px;
+}
+
+textarea {
+    width: 618px;
+    height: 86px;
+    font-size: 16px;
+    line-height: 1.4;
+    resize: vertical;
+}
+
+select {
+    width: 331px;
+    background: #F4F4F4 url('image/svg+xml;base64,...') no-repeat right 10px center;
+    /* SVGアイコンはFigmaのポリゴン部分に相当 */
+    appearance: none;
+}
+
+.placeholder {
+    font-size: 14px;
+    color: #BEB1A6;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+/* 性別選択部分 */
+.gender-row {
+    display: flex;
+    gap: 30px;
+    margin-left: 10px;
+}
+
+.gender-lbl {
+    color: #8B7969;
+    font-size: 18px;
+    font-family: 'Inika', serif;
+}
+
+input[type="radio"] {
+    accent-color: #8B7969;
+    margin-right: 8px;
+}
+
+/* エラーメッセージ */
+.error {
+    color: #e73c3c;
+    font-size: 0.95em;
+    margin: 10px 0 0 12px;
+}
+
+/* 確認画面ボタン */
+.submit-btn {
+    display: block;
+    width: 160px;
+    height: 46px;
+    margin: 45px auto 0 auto;
+    background: #82756A;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Inika', serif;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    line-height: 26px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(130, 117, 106, 0.08);
+    transition: background 0.2s;
+}
+
+.submit-btn:hover {
+    background: #5d4c3b;
+}
+
+/* フォームレイアウト細部・レスポンシブは必要に応じ追加 */
+@media (max-width: 1000px) {
+    .form-wrapper {
+        width: 96vw;
+    }
+
+    input[type="text"].large,
+    input[type="email"],
+    select,
+    textarea {
+        width: 83vw;
+    }
+}

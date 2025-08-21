@@ -1,0 +1,97 @@
+/* ブロック: confirm */
+.confirm {
+    width: 100%;
+    max-width: 700px;
+    margin: 48px auto 0 auto;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(180, 170, 145, 0.08);
+    padding: 0 24px 24px 24px;
+    border-radius: 8px;
+}
+
+.confirm__title {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 28px;
+    color: #8B7969;
+    font-weight: 400;
+}
+
+.confirm__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+.confirm__label {
+    width: 180px;
+    background: #BAA899;
+    /* ←項目部分の色 */
+    color: #fff;
+    text-align: left;
+    padding: 14px 18px;
+    letter-spacing: 1px;
+    border-right: 2px solid #f6f4f1;
+    border-bottom: 1px solid #f6f4f1;
+    font-weight: 400;
+    vertical-align: middle;
+    font-size: 1.06em;
+}
+
+.confirm__value {
+    background: #fff;
+    /* ←値部分は白 */
+    color: #8B7969;
+    padding: 14px 22px;
+    border-bottom: 1px solid #f6f4f1;
+    vertical-align: middle;
+    word-break: break-all;
+    font-size: 1.06em;
+    text-align: left;
+}
+
+/* テーブル最終行のボーダー削除 */
+.confirm__table tr:last-child th,
+.confirm__table tr:last-child td {
+    border-bottom: none;
+}
+
+.confirm__actions {
+    margin-top: 28px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+}
+
+/* 共通button/link */
+.button {
+    padding: 10px 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.button--primary {
+    background: #82756A;
+    color: #fff;
+}
+
+.button--primary:hover {
+    background: #BAA899;
+}
+
+.link {
+    color: #82756A;
+    text-decoration: underline;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.link--back:hover {
+    color: #BAA899;
+}
